@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style></style>
+    <link rel="stylesheet" href="css样式.css">
+</head>
+<body onload="onLoad()">
+<div id="score">score:<span>0</span></div>
+<img src="bg.png" alt="">
+<canvas id="cvs" width="250" height="400" style="border: 1px solid black"></canvas>
+<button id="stop" onclick="stop()"></button>
+<button id="replay" onclick="replay()"></button>
+<button id="continue" onclick="play()"></button>
+<dialog onclose>
+    <div>
+        <button onclick="replay()">再来一次</button>
+    </div>
+</dialog>
+<script src="logic.js"></script>
+<script src="game.js"></script>
+</body>
+</html>
